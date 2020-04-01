@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/valRadius"
+    app:cardElevation="4dp"
+    android:layout_margin="15dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ivSpeakerImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heighImageViewHome"
+        android:src="@drawable/ic_launcher_person_background"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvSpeakerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Expositor"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sizeTitle"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <TextView
+        android:id="@+id/tvSpeakerJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trabajo Expositor"
+        android:textSize="@dimen/sizeContent"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
